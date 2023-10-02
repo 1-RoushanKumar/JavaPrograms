@@ -1,6 +1,6 @@
 package com.rocky;
 
-public class Typecasting {
+public class _4_Typecasting {
     public static void main(String[] args) {
 //        int num = 67.56; //show error bcoz i assignning float value in integer datatype.
         //type casting

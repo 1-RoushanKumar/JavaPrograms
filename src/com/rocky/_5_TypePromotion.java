@@ -1,6 +1,6 @@
 package com.rocky;
 
-public class TypePromotion {
+public class _5_TypePromotion {
     public static void main(String[] args) {
 
 

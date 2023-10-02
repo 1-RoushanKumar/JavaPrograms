@@ -2,7 +2,7 @@ package com.rocky;
 
 import java.util.Scanner;
 
-public class TakingInput {
+public class _2_TakingInput {
     public static void main(String[] args) {
         System.out.print("Enter your name::");
         Scanner input = new Scanner(System.in);

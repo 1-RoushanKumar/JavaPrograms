@@ -2,7 +2,7 @@ package com.rocky;
 
 import java.util.Scanner;
 
-public class Sum {
+public class _3_Sum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Values");
