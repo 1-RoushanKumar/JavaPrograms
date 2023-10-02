@@ -11,5 +11,9 @@ public class TakingInput {
         System.out.println(input.nextLine());
         System.out.print("Enter Your Rollno.:");
         System.out.println("Your rollno.is "+input.nextInt());
+
+        System.out.print("Enter Your marks::");
+        float marks = input.nextFloat();
+        System.out.println("Marks = "+marks);
     }
 }
