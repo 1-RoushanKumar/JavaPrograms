@@ -1,4 +1,4 @@
-package com.rocky;
+package com.basic;
 
 import java.util.Scanner;
 

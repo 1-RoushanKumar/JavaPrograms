@@ -1,4 +1,4 @@
-package com.rocky;
+package com.basic;
 
 public class _7_Loops {
     public static void main(String[] args) {
