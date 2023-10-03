@@ -1,5 +1,5 @@
 //Fibonacci number = 0,1,1,2,3,5,8,13....
-//sum of two previous terms.
+//sum of two previous terms is equal to next value of fibonacci number.
 
 package com.questions;
 
@@ -13,7 +13,7 @@ public class _3_FibonacciNumber {
         int n = in.nextInt();
 
         System.out.println("Fibonacci Series are");
-        int fibo1 = 0, fibo2 = 1, newfibo;
+        int fibo1 = 0, fibo2 = 1, newfibo;   //initially taken first two fibonacci number.
         System.out.print(fibo1+" ");
         System.out.print(fibo2+" ");
 
