@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _6_Reverse {
+public class _06_Reverse {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Number");

@@ -1,6 +1,6 @@
-package com.basic;
+package com.Concept;
 
-public class _7_Loops {
+public class _07_Loops {
     public static void main(String[] args) {
 //        int i = 1;
         // while loop.

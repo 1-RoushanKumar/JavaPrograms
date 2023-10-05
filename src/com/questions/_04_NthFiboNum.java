@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _4_NthFiboNum {
+public class _04_NthFiboNum {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

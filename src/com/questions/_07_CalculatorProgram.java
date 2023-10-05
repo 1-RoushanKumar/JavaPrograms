@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _7_CalculatorProgram {
+public class _07_CalculatorProgram {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int ans;

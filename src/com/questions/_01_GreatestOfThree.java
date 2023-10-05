@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _1_GreatestOfThree {
+public class _01_GreatestOfThree {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the value of a,b and c::");

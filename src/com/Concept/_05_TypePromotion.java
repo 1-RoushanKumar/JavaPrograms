@@ -1,6 +1,6 @@
-package com.basic;
+package com.Concept;
 
-public class _5_TypePromotion {
+public class _05_TypePromotion {
     public static void main(String[] args) {
 
 

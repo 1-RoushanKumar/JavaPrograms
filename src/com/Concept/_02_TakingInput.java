@@ -1,8 +1,8 @@
-package com.basic;
+package com.Concept;
 
 import java.util.Scanner;
 
-public class _2_TakingInput {
+public class _02_TakingInput {
     public static void main(String[] args) {
         System.out.print("Enter your name::");
         Scanner input = new Scanner(System.in);

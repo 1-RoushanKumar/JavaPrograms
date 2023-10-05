@@ -4,7 +4,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _9_Problem {
+public class _09_Problem {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int sum = 0;

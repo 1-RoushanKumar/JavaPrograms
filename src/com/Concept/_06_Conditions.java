@@ -1,8 +1,8 @@
-package com.basic;
+package com.Concept;
 
 import java.util.Scanner;
 
-public class _6_Conditions {
+public class _06_Conditions {
     public static void main(String[] args) {
         int a, b;
         System.out.println("Enter the value of a and b ::");

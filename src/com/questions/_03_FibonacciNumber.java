@@ -5,7 +5,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _3_FibonacciNumber {
+public class _03_FibonacciNumber {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

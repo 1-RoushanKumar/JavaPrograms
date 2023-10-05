@@ -1,8 +1,8 @@
-package com.basic;
+package com.Concept;
 
 import java.util.Scanner;
 
-public class _8_SwitchStatements {
+public class _08_SwitchStatements {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter fruit names.");
