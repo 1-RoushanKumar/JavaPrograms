@@ -1,6 +1,8 @@
 package com.Concept;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class _20_Arraylist {
@@ -30,15 +32,22 @@ public class _20_Arraylist {
 //        //there so many function in arraylist you can check it.
 
         //how take input in array.
+        System.out.println("Enter the value:");
         for (int i = 0; i < 5; i++) {
             list.add(in.nextInt());
         }
         //for printing
 //       System.out.println(list);   //1st way
         //2nd way
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i)+" ");
         }
+        System.out.println();
+        System.out.println(list.get(3));
 
+        Collections.sort(list);  //sort the array
+        for(int value: list){
+            System.out.print(value+" ");
+        }
     }
 }
