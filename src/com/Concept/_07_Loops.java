@@ -1,5 +1,4 @@
 package com.Concept;
-
 public class _07_Loops {
     public static void main(String[] args) {
 //        int i = 1;

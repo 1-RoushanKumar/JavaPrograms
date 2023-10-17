@@ -9,7 +9,6 @@ public class _11_FunctionExample {
     static String greet(){
         Scanner in = new Scanner(System.in);
         System.out.println("Enter");
-        String greeting = in.nextLine();
-        return greeting;
+        return in.nextLine();
     }
 }

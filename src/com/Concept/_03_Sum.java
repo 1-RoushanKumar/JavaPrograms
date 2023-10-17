@@ -1,7 +1,5 @@
 package com.Concept;
-
 import java.util.Scanner;
-
 public class _03_Sum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

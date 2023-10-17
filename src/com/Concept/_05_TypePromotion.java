@@ -1,8 +1,6 @@
 package com.Concept;
-
 public class _05_TypePromotion {
     public static void main(String[] args) {
-
 
         byte b = 56;
         char c = 'd';

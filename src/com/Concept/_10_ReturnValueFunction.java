@@ -13,7 +13,6 @@ public class _10_ReturnValueFunction {
         System.out.println("Enter Two number");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
-        int add = num1 + num2;
-        return add;   //after return value function return to the main function and don't execute again.
+        return num1 + num2;   //after return value function return to the main function and don't execute again.
     }
 }

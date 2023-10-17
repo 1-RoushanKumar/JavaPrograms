@@ -17,6 +17,4 @@ public class _12_PassingValue {
     static float avg(int a, int b, int c) {
         return  (float) (a + b + c) / 3;
     }
-
-
 }

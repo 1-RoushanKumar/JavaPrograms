@@ -6,9 +6,9 @@ public class _08_SwitchStatements {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter fruit names.");
-        String fruit_colour = in.next();
+        String fruit_name = in.next();
 
-//        switch (fruit_colour) {
+//        switch (fruit_name) {
 //            case "Mango":
 //                System.out.println("Yellow colour");
 //                break;
@@ -26,7 +26,7 @@ public class _08_SwitchStatements {
 //        }
 
 //         enhance switch statement..
-        switch (fruit_colour) {
+        switch (fruit_name) {
             case "Mango" -> System.out.println("Yellow colour");
             case "Apple" -> System.out.println("Red colour");
             case "Grapes" -> System.out.println("Green colour");

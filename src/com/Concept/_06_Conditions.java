@@ -1,7 +1,5 @@
 package com.Concept;
-
 import java.util.Scanner;
-
 public class _06_Conditions {
     public static void main(String[] args) {
         int a, b;
