@@ -12,7 +12,7 @@ public class _19_PerfectNumber {
         int num = in.nextInt(), sum = 0;
 
         System.out.println("Factors are::");
-        for (int i = 1; i < num; i++) {
+        for (int i = 1; i <= num/2; i++) {
             if (num % i == 0) {
                 System.out.print(i+" ");
                 sum = sum + i;

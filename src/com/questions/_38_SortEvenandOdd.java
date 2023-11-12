@@ -22,6 +22,7 @@ public class _38_SortEvenandOdd {
         System.out.println("Array After sorting " + Arrays.toString(arr));
     }
 
+    // i used two pointer method to solve this question.
     static void sort(int[] arr) {
         int start = 0;
         int end = arr.length - 1;

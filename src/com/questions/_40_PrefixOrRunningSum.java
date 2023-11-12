@@ -20,9 +20,19 @@ public class _40_PrefixOrRunningSum {
         }
         System.out.println("Array before " + Arrays.toString(arr));
 
+        //by using extra array.
+//        int[] ans = new int[n];
+//        ans[0] = arr[0];
+//        for (int i = 1; i < n; i++) {
+//            ans[i] = arr[i] + ans[i - 1];
+//        }
+//        System.out.println(Arrays.toString(ans));
+
+        //without using extra array or space.
         for (int i = 1; i < arr.length; i++) {
             arr[i] = arr[i - 1] + arr[i];
         }
         System.out.println("Array Now " + Arrays.toString(arr));
+
     }
 }

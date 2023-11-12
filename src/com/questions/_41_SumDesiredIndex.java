@@ -1,3 +1,7 @@
+//Given an array of integers of size n. Answer q queries where you need to print the sum
+//of values in a given range of indices from l to r(both included).
+//Note:The values of l and r in queries follow 1-based indexing.
+
 package com.questions;
 
 import java.util.Arrays;
@@ -9,11 +13,11 @@ public class _41_SumDesiredIndex {
         System.out.print("Enter no. of elements:");
         int n = sc.nextInt();
         System.out.println("Enter the element of the array::");
-        int[] arr = new int[n + 1];
-        for (int i = 1; i <= n; i++) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Array before " + Arrays.toString(arr));
+        System.out.println("Array" + Arrays.toString(arr));
         System.out.print("Enter Numbers of query::");
         int query = sc.nextInt();
         while (query > 0) {

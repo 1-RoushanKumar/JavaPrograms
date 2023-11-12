@@ -12,13 +12,16 @@ public class _20_Arraylist {
 
         ArrayList<Integer> list = new ArrayList<>(4);
 
-//        list.add(45);
-//        list.add(2);
-//        list.add(89);
-//        list.add(98);
-//        list.add(123);
-//        list.add(45);
-//        System.out.println(list);    //printing.
+        list.add(45);
+        list.add(2);
+        list.add(89);
+        list.add(98);
+        list.add(123);
+        list.add(45);
+        System.out.println(list);    //printing.
+        list.add(1,0);
+        System.out.println(list);   //when we add new element in the index where already some element then it push
+                                    //all element back and come to its initialized index.
 //
 //        list.set(3, 90);
 //        list.set(1, 0);
@@ -33,22 +36,22 @@ public class _20_Arraylist {
 //        //there so many function in arraylist you can check it.
 
         //how take input in array.
-        System.out.println("Enter the value:");
-        for (int i = 0; i < 5; i++) {
-            list.add(in.nextInt());
-        }
-        //for printing
-//       System.out.println(list);   //1st way
-        //2nd way
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i)+" ");
-        }
-        System.out.println();
-        System.out.println(list.get(3));
-
-        Collections.sort(list);  //sort the array
-        for(int value: list){
-            System.out.print(value+" ");
-        }
+//        System.out.println("Enter the value:");
+//        for (int i = 0; i < 5; i++) {
+//            list.add(in.nextInt());
+//        }
+//        //for printing
+////       System.out.println(list);   //1st way
+//        //2nd way
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.print(list.get(i)+" ");
+//        }
+//        System.out.println();
+//        System.out.println(list.get(3));
+//
+//        Collections.sort(list);  //sort the array
+//        for(int value: list){
+//            System.out.print(value+" ");
+//        }
     }
 }

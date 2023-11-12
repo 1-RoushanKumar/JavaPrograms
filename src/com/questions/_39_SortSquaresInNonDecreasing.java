@@ -37,6 +37,9 @@ public class _39_SortSquaresInNonDecreasing {
                 end--;
             }
         }
+        //suppose we have arr = {-10,-3,-1,2,4,5}
+        //then after doing above algorithm it will become {100,25,16,9,4,1}
+        //so now we only need to reverse it for getting required answer.(ie {1,4,9,16,25,100}
         reverse(ans);
         return ans;
     }

@@ -4,7 +4,7 @@ public class _23_PrintingArmstrong {
     public static void main(String[] args) {
         int num;
         //Printing armstrong number between 1 to 100000.
-        for (num = 1; num < 100000; num++) {
+        for (num = 1; num < 1000; num++) {
             if (isArmstrong(num)) {
                 System.out.print(num + " ");
             }
