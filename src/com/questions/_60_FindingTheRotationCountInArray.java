@@ -8,7 +8,7 @@ public class _60_FindingTheRotationCountInArray {
         int ans = linear(arr);
         System.out.println("No.of Rotation is "+ans);     //by using linear search
         int Ans = binaryCheck(arr);
-        System.out.println("No.of Rotation is "+(Ans+1)%arr.length);//by using binary search
+        System.out.println("No.of Rotation is "+(Ans+1)%arr.length);//by using binary search (I used modulo to prevent array out of bound)
     }
 
     //    1st Approach (linear Search)

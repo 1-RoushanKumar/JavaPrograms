@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class _32_RotateArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-        int k = 401;
+        int k = 402;
         rotate(arr, k);
     }
     static void rotate(int[] arr, int k) {

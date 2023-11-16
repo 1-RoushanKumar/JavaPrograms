@@ -21,13 +21,29 @@ public class _59_FindingPivotUsingBinary {
         for (int val : arr) {
             System.out.print(val + " ");
         }
-        int ans = pivot(arr);
+        //Searching pivot for increasing array.
+        int ans = pivotInIncArr(arr);
         System.out.println();
-        System.out.println("Pivot index is :: " + ans);
+        if (ans==-1){
+            System.out.println("Array is not rotated, So index of pivot is "+ (n-1));
+        }
+        else {
+            System.out.println("Pivot index is :: " + ans);
+        }
+
+
+//        //Searching pivot for decreasing array.
+//        System.out.println();
+//        int Ans = pivotINDecArr(arr);
+//        if (Ans == -1) {
+//            System.out.println("Array is not rotated, So index of pivot is 0.");
+//        } else {
+//            System.out.println("Pivot index is :: " + Ans);
+//        }
     }
 
     //so below we have function for finding the pivot.
-    static int pivot(int[] arr) {
+    static int pivotInIncArr(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
@@ -45,15 +61,34 @@ public class _59_FindingPivotUsingBinary {
             //case 3 and 4 Suppose we hava an array [3,4,5,6,7,0,1,2] here arr[mid] = 6.We check arr[0] is greater than arr[mid]
             //Or arr[0] is smaller than arr[mid] or not .If arr[0] < arr[mid] that means pivot will lies from index (mid+1) to end
             //so start = mid+1; .But when arr[start]>arr[mid] that means pivot will lies from index (mid-1) to start .So end = mid-1.
-            else if (arr[start] > arr[mid]) {
-                end = mid - 1;
-            } else if (arr[start] < arr[mid]) {
+             else if (arr[start] < arr[mid]) {
                 start = mid + 1;
             }
-            //case 5 when array is not rotated is simple is increasing or decreasing order ie arr=[3,4,5,6,7,8] then after checking
-            //all above condition if no one satisfied then it will mid is the pivot try with example.
-            else {
-                return end;
+            else if (arr[start] > arr[mid]) {
+                end = mid - 1;
+            }
+            else{
+                return -1;
+            }
+        }
+        return -1;
+    }
+
+    static int pivotINDecArr(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (mid < end && arr[mid] < arr[mid + 1]) {
+                return mid+1;
+            }
+            else if (mid > start && arr[mid] > arr[mid - 1]) {
+                return mid;
+            }
+            else if (arr[end] > arr[mid]) {
+                start = mid +1;
+            } else if (arr[end] < arr[mid]) {
+                end = mid -1;
             }
         }
         return -1;

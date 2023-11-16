@@ -20,39 +20,21 @@ public class _57_SearchingInInfiniteArray {
         }
         System.out.print("\nEnter Target Element:: ");
         int target = sc.nextInt();
-        int ans = findRange(arr,target);
-        System.out.println("Index no = "+ans);
+        int Ans = linear(arr,target);
+        System.out.println("Index no = "+Ans);
     }
 
-    static int findRange(int[] arr, int target) {
-        //so first we need to find the range
-        //first start with a box of size 2.
-        int start = 0;
-        int end = 1;
-        int val = arr[0];
-        while (target > val) {
-            start = end;
-            //double the box value
-            //end = previous end + sizeOfBox*2.
-            end = 2*end;
-            val = arr[end];
-
-        }
-        return search(arr, target, start, end);
-
-    }
-
-    static int search(int[] arr, int target, int start, int end) {
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (arr[mid] == target) {
-                return mid;
-            } else if (arr[mid] > target) {
-                end = mid - 1;
-            } else {
-                start = mid + 1;
+    //Naive Method..(for optimized way search in youtube).
+    static int linear(int[] arr,int target){
+        int i = 0;
+        while(true){
+            if(arr[i]==target){
+                return i;
             }
+            if(arr[i]>target){
+                return -1;
+            }
+            i++;
         }
-        return -1;
     }
-}
+    }
