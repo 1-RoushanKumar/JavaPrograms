@@ -23,9 +23,9 @@ public class _20_Arraylist {
         System.out.println(list);   //when we add new element in the index where already some element then it push
                                     //all element back and come to its initialized index.
 //
-//        list.set(3, 90);
-//        list.set(1, 0);
-//        System.out.println(list);    //modifying then printing.
+        list.set(3, 90);
+        list.set(1, 0);
+        System.out.println(list);    //modifying then printing.
 //
 //        list.remove(2);
 //        list.remove(3);
