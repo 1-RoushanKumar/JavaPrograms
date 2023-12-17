@@ -6,10 +6,12 @@ package com.questions;
 
 public class _82_CheckStringSubsequence {
     public static void main(String[] args) {
-        String str1 = "ABCDEF";
-        String str2 = "AFE";
+        String str1 = "ABC";
+        String str2 = "AB";
+        
         boolean flag = isSubSeq(str1,str2);
         System.out.println(flag);
+
         int n = str1.length();
         int m = str2.length();
         boolean flagRec = isSubSeqRec(str1,str2,n,m);

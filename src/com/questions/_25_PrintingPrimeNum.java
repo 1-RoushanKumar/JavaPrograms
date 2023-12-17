@@ -24,7 +24,7 @@ public class _25_PrintingPrimeNum {
         if (num == 1) {
             return false;
         } else {
-            for (int j = 2; j*j<= num; j++) {
+            for (int j = 2; j * j <= num; j++) {
                 if (num % j == 0) {
                     return false;
                 }

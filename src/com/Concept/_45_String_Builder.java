@@ -24,11 +24,11 @@ public class _45_String_Builder {
         System.out.println("Proof");
         //example.
         String name = "Rocky";
-        System.out.println(name.toString());   //print "Rocky"
+        System.out.println(name);   //print "Rocky"
         System.out.println(name.concat("Bhai"));   //print "RockyBhai"
-        System.out.println(name.toString());   //but it will "Rocky" even we concatenated it above
+        System.out.println(name);   //but it will "Rocky" even we concatenated it above
         //This is the proof that String make new objects for all changes previous (original) value is remain same .
-        //Hence String is immutable.
+        //Hence, String is immutable.
 
         //but in case of StringBuilder.
         StringBuilder builder2 = new StringBuilder("Roushan");

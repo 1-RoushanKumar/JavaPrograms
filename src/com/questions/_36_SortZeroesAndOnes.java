@@ -19,6 +19,7 @@ public class _36_SortZeroesAndOnes {
         sort(arr);
         System.out.println("Array After sorting " + Arrays.toString(arr));
     }
+
     static void sort(int[] arr) {
         int n = arr.length;
         int count = 0;

@@ -1,6 +1,6 @@
 //anagram means
-//consider example = listen . all permutation of listen with same no of character is called anagram.
-// here silent,tensil,etc are the anagram.
+//consider example = listen . all permutation of listen with same no. of character is called anagram.
+// here silent,tensil,etc. are the anagram.
 package com.questions;
 
 import java.util.Arrays;

@@ -6,7 +6,7 @@ public class _48_Recursion {
     }
 
     static void print(int n) {
-        if (n == 10) {
+        if (n == 5) {
             System.out.println(n);
             return;
         }

@@ -4,7 +4,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _05_countOccurences {
+public class _05_countOccurrences {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Number");

@@ -3,7 +3,7 @@ package com.questions;
 public class _63_IndexOfTheLastOccurrence {
     public static void main(String[] args) {
         int[] arr = {5, 10, 10, 15, 20, 20, 20};
-        int target = 200 ;
+        int target = 20;
         //Using iterative method.
         int ans = search(arr, target);
         System.out.println(ans);

@@ -1,4 +1,4 @@
-//In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. For example, 6
+//In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. For example,6
 // has divisors 1, 2, and 3(excluding itself), and 1+2+3=6, so 6is a perfect number. Other perfect numbers are 28, 496, and 8128.
 
 package com.questions;
@@ -12,13 +12,13 @@ public class _19_PerfectNumber {
         int num = in.nextInt(), sum = 0;
 
         System.out.println("Factors are::");
-        for (int i = 1; i <= num/2; i++) {
+        for (int i = 1; i <= num / 2; i++) {
             if (num % i == 0) {
-                System.out.print(i+" ");
+                System.out.print(i + " ");
                 sum = sum + i;
             }
         }
-        System.out.println("\nSum of the factors is "+sum);
+        System.out.println("\nSum of the factors is " + sum);
         if (sum == num) {
             System.out.println("So Perfect Number.");
         } else {

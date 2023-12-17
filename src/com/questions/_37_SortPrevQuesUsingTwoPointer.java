@@ -23,14 +23,21 @@ public class _37_SortPrevQuesUsingTwoPointer {
     static void sort(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
-        while (start <= end) {
+        while (start < end) {
             if (arr[start] > arr[end]) {
                 int temp = arr[start];
                 arr[start] = arr[end];
                 arr[end] = temp;
+                start++;
+                end--;
+            } else if ((arr[start] == arr[end]) && arr[end] == 0) {
+                start++;
+            } else if ((arr[start] == arr[end]) && arr[end] == 1) {
+                end--;
+            }else{
+                start++;
+                end--;
             }
-            start++;
-            end--;
         }
     }
 }

@@ -1,5 +1,5 @@
 //need to return square root of the number.
-//sqrt of 9 is 3. And if num = 35 then return previous found square root from that number .Hence sqrt of 35 is 5.
+//sqrt of 9 is 3. And if num = 35 then return previous found square root from that number .Hence, sqrt of 35 is 5.
 
 package com.questions;
 

@@ -33,5 +33,6 @@ public class _41_SumDesiredIndex {
             query--;
         }
         System.out.println("End");
+
     }
 }

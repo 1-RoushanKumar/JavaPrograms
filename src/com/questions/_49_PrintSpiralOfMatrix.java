@@ -1,6 +1,7 @@
 //https://youtu.be/LJeY_cL0oC8?list=PLxgZQoSe9cg00xyG5gzb5BMkOClkch7Gr
 package com.questions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -26,6 +27,10 @@ public class _49_PrintSpiralOfMatrix {
                 matrix[i][j] = sc.nextInt();
             }
         }
+        int n = matrix.length-1;
+        int m = matrix[0].length-1;
+        System.out.println(n);
+        System.out.println(m);
     }
 
     static void spiral(int[][] matrix, int r, int c) {

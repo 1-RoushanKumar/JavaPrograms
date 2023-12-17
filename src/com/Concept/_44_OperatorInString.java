@@ -11,7 +11,7 @@ public class _44_OperatorInString {
         System.out.println((char)('a' + 3));  // at 100 which character d.
         System.out.println("a" + 3);   //it will concatenate again by converting integer to string by toString method.
 
-        System.out.println("a" + 'a');  //it will print a because char is promoted to string.
+        System.out.println("a" + 'a');  //it will print aa because char is promoted to string.
 
     }
 }

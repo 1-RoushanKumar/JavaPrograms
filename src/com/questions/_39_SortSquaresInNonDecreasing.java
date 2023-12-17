@@ -22,6 +22,7 @@ public class _39_SortSquaresInNonDecreasing {
         System.out.println("Array before sorting " + Arrays.toString(arr));
         System.out.println("Array After sorting " + Arrays.toString(sortSquares(arr)));
     }
+
     static int[] sortSquares(int[] arr) {
         int[] ans = new int[arr.length];
         int start = 0;
@@ -43,6 +44,7 @@ public class _39_SortSquaresInNonDecreasing {
         reverse(ans);
         return ans;
     }
+
     static void reverse(int[] ans) {
         int start = 0;
         int end = ans.length - 1;
@@ -54,4 +56,5 @@ public class _39_SortSquaresInNonDecreasing {
             end--;
         }
     }
+
 }

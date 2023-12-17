@@ -20,21 +20,21 @@ public class _57_SearchingInInfiniteArray {
         }
         System.out.print("\nEnter Target Element:: ");
         int target = sc.nextInt();
-        int Ans = linear(arr,target);
-        System.out.println("Index no = "+Ans);
+        int Ans = linear(arr, target);
+        System.out.println("Index no = " + Ans);
     }
 
     //Naive Method..(for optimized way search in youtube).
-    static int linear(int[] arr,int target){
+    static int linear(int[] arr, int target) {
         int i = 0;
-        while(true){
-            if(arr[i]==target){
+        while (true) {
+            if (arr[i] == target) {
                 return i;
             }
-            if(arr[i]>target){
+            if (arr[i] > target) {
                 return -1;
             }
             i++;
         }
     }
-    }
+}

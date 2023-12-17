@@ -61,12 +61,12 @@ public class _53_MoreOptimizedWayForQues51 {
 
         int sum, up = 0, left = 0, leftUp = 0, ans;
         findPrefixSumMatrix(matrix);
-            sum = matrix[l2][r2];
-        if (l1 >= 1)
+        sum = matrix[l2][r2];
+        if (r1 >= 1)
             left = matrix[l2][r1 - 1];
         if (l1 >= 1)
             up = matrix[l1 - 1][r2];
-        if (l1 >= 1)
+        if (l1 >= 1 && r1 >= 1)
             leftUp = matrix[l1 - 1][r1 - 1];
         ans = sum - up - left + leftUp;
         return ans;

@@ -1,12 +1,12 @@
-//Ques if we hava given an non decreasing sorted array (ex-->[1,10,10,10,20,20,40])
+//Ques if we have given a non-decreasing sorted array (ex-->[1,10,10,10,20,20,40])
 //we need to find the first occurrence of the target element in the array (if target = 10 the answer index is 1)
 
 package com.questions;
 
 public class _62_IndexOfFirstOccurrence {
     public static void main(String[] args) {
-        int[] arr = {5, 10, 10, 15, 20, 20, 20};
-        int target = 10;
+        int[] arr = {5, 10, 20, 20};
+        int target = 20;
         //Using iterative method.
         int ans = search(arr, target);
         System.out.println(ans);
@@ -55,4 +55,5 @@ public class _62_IndexOfFirstOccurrence {
             return searchRecursion(arr, target, mid + 1, end);
         }
     }
+
 }

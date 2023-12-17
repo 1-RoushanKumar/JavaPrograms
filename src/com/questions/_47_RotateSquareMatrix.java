@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class _47_RotateSquareMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter only value of n (because it is square Matrix::");
+        System.out.print("Enter only value of n (because it is square Matrix)::");
         int n = sc.nextInt();
         int[][] mat1 = new int[n][n];
         printMatrix(mat1, n, n);
@@ -31,6 +31,7 @@ public class _47_RotateSquareMatrix {
         }
     }
 
+    //first we transpose it
     static void transposeInOneArray(int[][] matrix, int x, int y) {
         for (int i = 0; i < x; i++) {
             for (int j = i; j < y; j++) {
@@ -41,6 +42,7 @@ public class _47_RotateSquareMatrix {
         }
     }
 
+    //then reverse the matrix per row
     static void reverseMatrix(int[][] matrix, int x, int y) {
         for (int i = 0; i < x; i++) {
             int start = 0, end = y - 1;
@@ -53,4 +55,5 @@ public class _47_RotateSquareMatrix {
             }
         }
     }
+    //finally we get an 90 degree rotated array.
 }

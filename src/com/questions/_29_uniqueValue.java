@@ -12,9 +12,9 @@ public class _29_uniqueValue {
             }
         }
         int ans = -1;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != -1) {
-                ans = arr[i];
+        for (int j : arr) {
+            if (j != -1) {
+                ans = j;
             }
         }
         System.out.println(ans);

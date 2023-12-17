@@ -4,7 +4,7 @@ public class _27_MaxUsingArrayFunc {
     public static void main(String[] args) {
         int[] arr = {100, 96, 85, 36, 12};
 //        System.out.println("Maximum Value:"+max(arr));
-        System.out.println("Maximum value:"+max1(arr,1,4));
+        System.out.println("Maximum value:"+max1(arr,0,4));
     }
     //for finding max value in all array.
 //    static int max(int[] arr){

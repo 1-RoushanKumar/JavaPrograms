@@ -17,6 +17,7 @@ public class _51_SumOfSelectedRectangle {
             System.out.println(Arrays.toString(mat1[i]));
         }
         System.out.println("Sum= " + sumMat(mat1));
+
     }
 
     static void printMatrix(int[][] matrix, int x, int y) {
@@ -32,13 +33,15 @@ public class _51_SumOfSelectedRectangle {
     static int sumMat(int[][] mat1) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the value of l1 and r1::");
+        //where l1 and r1 is the first coordinate point of the rectangle.
         int l1 = in.nextInt();
         int r1 = in.nextInt();
         System.out.println("Enter the value of l2 and r2::");
+        //where l1 and r1 is the second coordinate point of the rectangle.
         int l2 = in.nextInt();
         int r2 = in.nextInt();
         int sum = 0;
-        for (int i = l1; i <= l2 ; i++) {
+        for (int i = l1; i <= l2; i++) {
             for (int j = r1; j <= r2; j++) {
                 sum = sum + mat1[i][j];
             }

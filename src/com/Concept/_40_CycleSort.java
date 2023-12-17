@@ -4,12 +4,34 @@ import java.util.Arrays;
 
 public class _40_CycleSort {
     public static void main(String[] args) {
-        int[] arr = {50, 400, -50, 100, 200};
-        sort(arr);
+        int[] arr = {500, 400, -50009, 10, 2, 0, -67};
+        sort1(arr);
         System.out.println(Arrays.toString(arr));
     }
 
     //Time complexity O(n^2) .
+    //1st way.Simple find the value which is smaller than ith element count it then it will give the index
+    //then swap it with that value.
+    static void sort1(int[] arr) {
+        int n = arr.length;
+        int i = 0;
+        while (i < n) {
+            int count = 0;
+            for (int j = 0; j < n; j++) {
+                if (arr[j] < arr[i]) {
+                    count++;
+                }
+            }
+            if (arr[i] == arr[count]) {
+                i++;
+            } else {
+                swap(arr, i, count);
+            }
+        }
+    }
+
+    //Time complexity O(n^2) .
+    //2nd way.Go to gfg cycle sort lecture.
     static void sort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {

@@ -11,7 +11,7 @@ public class _58_FindingTargetInMountArr {
         System.out.print("Enter the value of n::");
         int n = sc.nextInt();
         int[] arr = new int[n];
-        System.out.println("Enter the element in sorted order(either descending or ascending order):: ");
+        System.out.println("Enter the element in sorted order:: ");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
@@ -31,9 +31,9 @@ public class _58_FindingTargetInMountArr {
         while (start < end) {
             int mid = start + (end - start) / 2;
             if (arr[mid] > arr[mid + 1]) {
-                end = end - 1;
+                end = mid;
             } else {
-                start = start + 1;
+                start = mid + 1;
             }
         }
         int newStart = 0;

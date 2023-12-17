@@ -1,4 +1,4 @@
-//Given an array of integers a , move all the even integers at the beginning of the array followed by all the
+//Given an array of integers arr, move all the even integers at the beginning of the array followed by all the
 //odd integers. The relative order of odd or even integers does not matter. Return any array that satisfies the condition.
 //https://youtu.be/FmXF2df9OVo?list=PLxgZQoSe9cg00xyG5gzb5BMkOClkch7Gr&t=1968
 
@@ -27,18 +27,18 @@ public class _38_SortEvenandOdd {
         int start = 0;
         int end = arr.length - 1;
         while (start < end) {
-            if (arr[start] % 2 == 0 && arr[end] % 2 != 0) {
-                start++;
-                end--;
-            } else if (arr[start] % 2 != 0 && arr[end] % 2 == 0) {
+            if (arr[start] % 2 != 0 && arr[end] % 2 == 0) {
                 int temp = arr[start];
                 arr[start] = arr[end];
                 arr[end] = temp;
                 start++;
                 end--;
-            } else if (arr[start] % 2 == 0) {
+            } else if (arr[start] % 2 == 0 && arr[end] % 2 == 0) {
                 start++;
+            } else if (arr[start] % 2 != 0 && arr[end] % 2 != 0) {
+                end--;
             } else {
+                start++;
                 end--;
             }
         }

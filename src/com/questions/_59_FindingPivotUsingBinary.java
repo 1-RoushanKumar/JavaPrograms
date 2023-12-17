@@ -24,10 +24,9 @@ public class _59_FindingPivotUsingBinary {
         //Searching pivot for increasing array.
         int ans = pivotInIncArr(arr);
         System.out.println();
-        if (ans==-1){
-            System.out.println("Array is not rotated, So index of pivot is "+ (n-1));
-        }
-        else {
+        if (ans == -1) {
+            System.out.println("Array is not rotated, So index of pivot is " + (n - 1));
+        } else {
             System.out.println("Pivot index is :: " + ans);
         }
 
@@ -61,13 +60,11 @@ public class _59_FindingPivotUsingBinary {
             //case 3 and 4 Suppose we hava an array [3,4,5,6,7,0,1,2] here arr[mid] = 6.We check arr[0] is greater than arr[mid]
             //Or arr[0] is smaller than arr[mid] or not .If arr[0] < arr[mid] that means pivot will lies from index (mid+1) to end
             //so start = mid+1; .But when arr[start]>arr[mid] that means pivot will lies from index (mid-1) to start .So end = mid-1.
-             else if (arr[start] < arr[mid]) {
+            else if (arr[start] < arr[mid]) {
                 start = mid + 1;
-            }
-            else if (arr[start] > arr[mid]) {
+            } else if (arr[start] > arr[mid]) {
                 end = mid - 1;
-            }
-            else{
+            } else {
                 return -1;
             }
         }
@@ -80,15 +77,13 @@ public class _59_FindingPivotUsingBinary {
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (mid < end && arr[mid] < arr[mid + 1]) {
-                return mid+1;
-            }
-            else if (mid > start && arr[mid] > arr[mid - 1]) {
+                return mid + 1;
+            } else if (mid > start && arr[mid] > arr[mid - 1]) {
                 return mid;
-            }
-            else if (arr[end] > arr[mid]) {
-                start = mid +1;
+            } else if (arr[end] > arr[mid]) {
+                start = mid + 1;
             } else if (arr[end] < arr[mid]) {
-                end = mid -1;
+                end = mid - 1;
             }
         }
         return -1;

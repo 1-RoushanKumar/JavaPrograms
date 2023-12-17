@@ -9,7 +9,7 @@ public class _42_String {
         String b = "Hello";
         //both a and b are pointing to the same object(only one Hello is created here) in String Pool.
 
-        //but if we change a it does't effect the value of b.Because String is immutable in java.
+        //but if we change a doesn't affect the value of b.Because String is immutable in java.
         a = "Rocky";
         System.out.println(a);   //new object for a is created in job pool.
         System.out.println(b);   //we can see b will remain same.

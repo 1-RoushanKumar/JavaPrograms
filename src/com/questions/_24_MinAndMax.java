@@ -5,7 +5,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _24_MinandMax {
+public class _24_MinAndMax {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter three values");

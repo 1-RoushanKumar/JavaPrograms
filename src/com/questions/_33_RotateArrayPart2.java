@@ -22,6 +22,7 @@ public class _33_RotateArrayPart2 {
         reverse1(arr, k);
         System.out.println(Arrays.toString(arr));
     }
+
     static void reverse1(int[] arr, int k) {
         int n = arr.length;
         k = k % n;
@@ -29,6 +30,7 @@ public class _33_RotateArrayPart2 {
         reverse(arr, n - k, n - 1);
         reverse(arr, 0, n - 1);
     }
+
     static void reverse(int[] arr, int start, int end) {
         while (start < end) {
             swap(arr, start, end);
@@ -36,6 +38,7 @@ public class _33_RotateArrayPart2 {
             end--;
         }
     }
+
     static void swap(int[] arr, int start, int end) {
         int temp = arr[start];
         arr[start] = arr[end];

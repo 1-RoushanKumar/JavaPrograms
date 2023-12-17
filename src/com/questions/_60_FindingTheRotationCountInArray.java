@@ -4,11 +4,11 @@ package com.questions;
 
 public class _60_FindingTheRotationCountInArray {
     public static void main(String[] args) {
-        int[] arr = {7,9,11,12,15};
+        int[] arr = {7, 9, 11, 12, 5,6};
         int ans = linear(arr);
-        System.out.println("No.of Rotation is "+ans);     //by using linear search
+        System.out.println("No.of Rotation is " + ans);     //by using linear search
         int Ans = binaryCheck(arr);
-        System.out.println("No.of Rotation is "+(Ans+1)%arr.length);//by using binary search (I used modulo to prevent array out of bound)
+        System.out.println("No.of Rotation is " + (Ans + 1) % arr.length);//by using binary search (I used modulo to prevent array out of bound)
     }
 
     //    1st Approach (linear Search)

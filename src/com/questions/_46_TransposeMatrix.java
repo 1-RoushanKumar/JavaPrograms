@@ -33,9 +33,9 @@ public class _46_TransposeMatrix {
 
     static void transpose(int[][] matrix, int x, int y) {
         int[][] mat = new int[y][x];
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                mat[j][i] = matrix[i][j];
+        for (int i = 0; i < y; i++) {
+            for (int j = 0; j < x; j++) {
+                mat[i][j] = matrix[j][i];
             }
         }
         System.out.println("Transpose of the matrix::");

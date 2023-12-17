@@ -12,7 +12,7 @@ public class _47_MethodsInString {
         System.out.println(charArray[5]);
         System.out.println(Arrays.toString(charArray));
 //        System.out.println(Arrays.toString(name.toCharArray()));  //direct way to printing string into array with initialization.
-
+        System.out.println(name.substring(1, 5));
         String lo = new String(name.toLowerCase());
         System.out.println(lo);
 //        System.out.println(name.toLowerCase());    //direct way.
@@ -28,7 +28,7 @@ public class _47_MethodsInString {
 
         String val = "Bhai";
         System.out.println(name.contains(val));
-        //if we change it to bhaii it will show false.
+        //if we change it to bhai it will show false.
         //there are so many method.
 
         String s1 = "Rohit";

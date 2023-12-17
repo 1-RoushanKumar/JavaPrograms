@@ -14,11 +14,12 @@ public class _42_OptimizedMethodForPrevQues {
         System.out.print("Enter no. of elements:");
         int n = sc.nextInt();
         System.out.println("Enter the element of the array::");
-        int[] arr = new int[n + 1];
-        for (int i = 1; i <= n; i++) {
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println("Array before " + Arrays.toString(arr));
+        //trick is first find the prefix sum of the array.
         for (int i = 1; i < arr.length; i++) {
             arr[i] = arr[i - 1] + arr[i];
         }
@@ -30,10 +31,14 @@ public class _42_OptimizedMethodForPrevQues {
             int l = sc.nextInt();
             System.out.print("Enter the value of r: ");
             int r = sc.nextInt();
-            int sum = arr[r] - arr[l-1];
+            int sum = 0;
+            if (l == 0) {
+                sum = arr[r];
+            } else {
+                sum = arr[r] - arr[l - 1];
+            }
             System.out.println("Sum of the element between l and r is " + sum);
             query--;
-            sum = 0;
         }
     }
 }

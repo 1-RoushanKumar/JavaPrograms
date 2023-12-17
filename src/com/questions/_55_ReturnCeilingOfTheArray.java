@@ -31,6 +31,7 @@ public class _55_ReturnCeilingOfTheArray {
         }
     }
 
+    //1st way.
     static int search(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
@@ -67,4 +68,30 @@ public class _55_ReturnCeilingOfTheArray {
         }
         return -1;
     }
+
+//    //2nd way easy to understand Similarly we can make it for decreasing sorted array.
+//    static int search(int[] arr, int target) {
+//        int start = 0;
+//        int end = arr.length - 1;
+//        //when target is greater than end value then there is no possible way to return number which just greater than it.
+//        if (arr[end] < target) {
+//            return -1;
+//        }
+//        //when target is smaller than start that means just greater number of target element is start element.
+//        else if (arr[start] > target) {
+//            return arr[start];
+//        } else {
+//            while (start <= end) {
+//                int mid = start + (end - start) / 2;
+//                if (arr[mid] == target) {
+//                    return arr[mid];
+//                } else if (arr[mid] > target) {
+//                    end = mid - 1;
+//                } else {
+//                    start = mid + 1;
+//                }
+//            }
+//        }
+//        return arr[start];
+//    }
 }

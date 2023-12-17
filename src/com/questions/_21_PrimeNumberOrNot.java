@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.Scanner;
 
-public class _21_PrimeNumberorNot {
+public class _21_PrimeNumberOrNot {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter any number::");
@@ -14,6 +14,7 @@ public class _21_PrimeNumberorNot {
             System.out.println("Not Prime");
         }
     }
+
     static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
