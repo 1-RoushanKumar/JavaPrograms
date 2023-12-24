@@ -20,7 +20,7 @@ public class _89_TrailingZeroesInFactorialOfNum {
 //        System.out.println(count);
 
         //2nd method to count no. of trailing zeroes. with Log(n) complexity.
-        //Try to do in _90_RecursionPrintNNaturalNumber paper.For detail go to Mathematics playlist Qno. 5
+        //Try to do in rough paper.For detail go to Mathematics playlist Qno. 5
         int count = 0;
         for (int i = 5; i <= n; i *= 5) {
             count = count + n / i;
