@@ -2,7 +2,7 @@ package com.questions;
 
 import java.util.ArrayList;
 
-public class _114_RecursionDicePossibleCombination {
+public class _114_RecursionDicePossibleCombinations {
     public static void main(String[] args) {
         dice("", 4);
         System.out.println();
