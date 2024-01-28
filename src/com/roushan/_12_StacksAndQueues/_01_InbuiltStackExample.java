@@ -12,13 +12,16 @@ public class _01_InbuiltStackExample {
         stt.push(19);
         stt.push(20);
 
-        //value which pushed last will come first ie(last in first out(lifo)).
+        System.out.println(stt);
+        //value which pushed last will come first, i.e. (last in first out(lifo)).
+        System.out.println(stt.pop());
+        System.out.println(stt);
         System.out.println(stt.pop());
         System.out.println(stt.pop());
         System.out.println(stt.pop());
         System.out.println(stt.pop());
         System.out.println(stt.pop());
-        System.out.println(stt.pop());
+        System.out.println(stt);
 //        System.out.println(stt.pop());   //it will show empty stack exception.
 
 

@@ -4,8 +4,8 @@ public class _04_a_CustomStack {
     protected int[] data;
     private static final int DEFAULT_SIZE = 10;
 
-    //generally all stack and queue are like array from inside.
-    //if size is not given then it make default size of array internally.
+    //generally, all stacks and queue are like array from and inside.
+    //if size is not given, then it makes the default size of an array internally.
     public _04_a_CustomStack() {
         this.data = new int[DEFAULT_SIZE];
     }

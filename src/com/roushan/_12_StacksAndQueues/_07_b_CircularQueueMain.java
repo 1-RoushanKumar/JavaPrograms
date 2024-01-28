@@ -2,7 +2,7 @@ package com.roushan._12_StacksAndQueues;
 
 public class _07_b_CircularQueueMain {
     public static void main(String[] args) throws Exception {
-        _07_a_CircularQueue queue = new _07_a_CircularQueue();
+        _07_a_CircularQueue queue = new _07_a_CircularQueue(5);
         queue.insert(3);
         queue.insert(6);
         queue.insert(5);

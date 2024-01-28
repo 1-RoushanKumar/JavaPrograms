@@ -1,7 +1,7 @@
 package com.roushan._12_StacksAndQueues;
 
-//situation is when array is full we cannot insert any value now because the size of the array is already full.
-//for taking care of array getting full we are making dynamic stack.
+//the situation is when an array is full, we cannot insert any value now because the size of the array is fix.
+//for taking care of array getting full, we are making dynamic stack.
 //its taking O(n) complexity.
 public class _05_a_DynamicStack extends _04_a_CustomStack {
     public _05_a_DynamicStack() {
@@ -12,8 +12,8 @@ public class _05_a_DynamicStack extends _04_a_CustomStack {
         super(size); //it will call CustomStack(int size);
     }
 
-    //in dynamic stack all thing will remain same except push
-    //because we need to add element dynamically.
+    //in dynamic stack, all things will remain the same except push
+    //because we need to add an element dynamically.
 
     @Override
     public boolean push(int item) {
@@ -28,7 +28,7 @@ public class _05_a_DynamicStack extends _04_a_CustomStack {
             }
             data = temp;
         }
-        //at this point we know that array size is increased
+        //at this point, we know that array size is increased
         //insert the item normally
         return super.push(item);
     }
