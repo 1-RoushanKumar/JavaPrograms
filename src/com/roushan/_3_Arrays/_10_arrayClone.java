@@ -11,6 +11,5 @@ public class _10_arrayClone {
         for (int val : arr3) {
             System.out.print(val + " ");
         }
-
     }
 }

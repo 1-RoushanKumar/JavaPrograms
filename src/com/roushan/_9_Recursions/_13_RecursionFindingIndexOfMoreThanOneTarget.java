@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class _13_RecursionFindingIndexOfMoreThanOneTarget {
     public static void main(String[] args) {
-        int[] arr = {1, 5, 2, 7, 8, 3, 0};
-        int[] target = {15, 8};
+        int[] arr = {1, 5, 2, 5, 8, 3, 0};
+        int[] target = {5, 8};
         //1st method.Only for distinct.
         for (int j : target) {
             count(arr, j, 0);

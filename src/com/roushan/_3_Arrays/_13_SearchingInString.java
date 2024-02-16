@@ -9,7 +9,7 @@ public class _13_SearchingInString {
     }
 
     static boolean search(String str, char target) {
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             return false;
         }
         for (int i = 0; i < str.length(); i++) {

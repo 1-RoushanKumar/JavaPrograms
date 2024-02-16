@@ -11,7 +11,7 @@ public class _21_InfixToPostFix {
     static int prec(char c) {
         if (c == '^')
             return 3;   //3 means the highest precedence.
-        else if (c == '/' || c == '*')
+        else if (c == '/' || c == '*' || c == '%')
             return 2;   //2nd highest.
         else if (c == '+' || c == '-')
             return 1;   //last precedence.
@@ -76,7 +76,7 @@ public class _21_InfixToPostFix {
 
     // Main code.
     public static void main(String[] args) {
-        String exp = "a+b*(c-d)";   //infix string.
+        String exp = "A+B-(C/D*E^F)%G*H";   //infix string.
         // Function call
         infixToPostfix(exp);
     }

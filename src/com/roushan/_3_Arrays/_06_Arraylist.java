@@ -17,10 +17,9 @@ public class _06_Arraylist {
         list.add(123);
         list.add(45);
         System.out.println(list);    //printing.
-        list.add(1,0);
-        System.out.println(list);   //when we add new element in the index where already some element then it push
-                                    //all element back and come to its initialized index.
-//
+        list.add(1,0); //when we add new element in the index where already some element then it push
+                                      //all element back and come to its initialized index.
+        System.out.println(list);
         list.set(3, 90);
         list.set(1, 0);
         System.out.println(list);    //modifying then printing.

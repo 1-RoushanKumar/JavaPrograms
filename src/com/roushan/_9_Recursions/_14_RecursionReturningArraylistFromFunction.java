@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class _14_RecursionReturningArraylistFromFunction {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 52, 1, 4, 6};
+        int[] arr = {1, 3, 52, 1};
         int target = 1;
         ArrayList<Integer> list = find(arr, target, 0);
         System.out.println(list);

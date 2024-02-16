@@ -5,16 +5,26 @@ public class _19_RecursionReplaceDesiredCharacterFromString {
         String str = "abbcda";
         char ch = 'a';
 
+        //For Loop Solution.
+//        StringBuilder build = new StringBuilder(str);
+//        for (int i = 0; i < build.length(); i++) {
+//            if (build.charAt(i) == 'a'){
+//                build.deleteCharAt(i);
+//            }
+//        }
+//        System.out.println(build);
+
+
         //1st way.
 //        StringBuilder builder = new StringBuilder(str);
 //        remove(builder, 0, ch);
 //        System.out.println(builder);
 
         //2nd way.
-        System.out.println(remove(str, ch));
+//        System.out.println(remove(str, ch));
 
         //3rd way.
-        skip(str, "", ch);
+//        skip(str, "", ch);
     }
 
     //1st way by using stringbuilder.
