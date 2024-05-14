@@ -2,7 +2,7 @@ package com.roushan._12_StacksAndQueues;
 
 import java.util.Scanner;
 import java.util.Stack;
-
+//we need to provide index k where you want to insert the element.
 public class _11_InsertAtKthPosition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

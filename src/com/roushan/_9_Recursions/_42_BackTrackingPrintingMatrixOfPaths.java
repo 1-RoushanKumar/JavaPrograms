@@ -3,7 +3,7 @@ package com.roushan._9_Recursions;
 
 import java.util.Arrays;
 
-public class _34_BackTrackingPrintingMatrixOfPaths {
+public class _42_BackTrackingPrintingMatrixOfPaths {
     public static void main(String[] args) {
         boolean[][] obs = {
                 {true, true, true},

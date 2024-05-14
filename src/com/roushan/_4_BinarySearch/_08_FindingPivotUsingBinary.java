@@ -65,10 +65,10 @@ public class _08_FindingPivotUsingBinary {
             } else if (arr[start] > arr[mid]) {
                 end = mid - 1;
             } else {
-                return -1;
+                return end;
             }
         }
-        return -1;
+        return end;
     }
 
     static int pivotINDecArr(int[] arr) {

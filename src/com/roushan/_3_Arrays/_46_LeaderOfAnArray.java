@@ -28,12 +28,12 @@ public class _46_LeaderOfAnArray {
     //Here I started with the last element. And last element is always a leader because no element after it.
     //Now I start comparing element with the current leader from right to left.
     static void find(int[] arr){
-        int curr_lead = arr[arr.length-1];
-        System.out.print(curr_lead);
+        int Max = arr[arr.length-1]; //here max represent current leader
+        System.out.print(Max);
         for (int i = arr.length-2; i >= 0 ; i--) {
-            if (curr_lead<arr[i]){
-                curr_lead=arr[i];
-                System.out.print(" "+curr_lead);
+            if (Max<arr[i]){
+                Max=arr[i];
+                System.out.print(" "+Max);
             }
         }
     }

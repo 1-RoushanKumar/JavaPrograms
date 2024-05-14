@@ -4,7 +4,6 @@ public class _3_CircularLL {
     private class Node {
         int val;
         Node next;
-
         public Node(int val) {
             this.val = val;
         }
@@ -12,7 +11,6 @@ public class _3_CircularLL {
     }
 
     private Node head;
-    private Node tail;
 
     //Naive-This approach will take O(n) time complexity.
 //    public void insertFirst(int val) {

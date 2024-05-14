@@ -1,6 +1,7 @@
 package com.roushan._3_Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class _09_ArrayListPassFunc {
     public static void main(String[] args) {

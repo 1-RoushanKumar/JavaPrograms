@@ -10,7 +10,6 @@ public class _02_PrettyPrinting {
 
         System.out.println();
         System.out.printf("My name is %s and I am %s.","Rocky","Cool");
-
         //there are so many format specifier.
     }
 }

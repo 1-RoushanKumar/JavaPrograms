@@ -24,7 +24,7 @@ public class _06_SearchingInInfiniteArray {
         System.out.println("Index no = " + Ans);
     }
 
-    //Naive Method..(for optimized way search in youtube).
+    //Naive Method.(for optimized way search in youtube).
     static int linear(int[] arr, int target) {
         int i = 0;
         while (true) {

@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 //gfg lec 13.
+//the size of the tree means the total number of nodes in the tree.
 public class _08_SizeOfTheBinaryTree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

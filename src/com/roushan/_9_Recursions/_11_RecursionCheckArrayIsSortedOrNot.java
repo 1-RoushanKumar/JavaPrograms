@@ -2,16 +2,30 @@ package com.roushan._9_Recursions;
 
 public class _11_RecursionCheckArrayIsSortedOrNot {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 30, 8, 9, 12};
+        int[] arr = {1, 2, 3, 8, 9, 12};
         boolean flag = check(arr, 0);
+        System.out.println(flag);
+        flag = check1(arr, 0);
         System.out.println(flag);
     }
 
+    // 1st method
     static boolean check(int[] arr, int i) {
         if (i == arr.length - 1) {
             return true;
         } else {
             return (arr[i] < arr[i + 1]) && check(arr, i + 1);    //we can use and conditional operator in return statement also.
+        }
+    }
+
+    //2nd method
+    static boolean check1(int[] arr, int i) {
+        if (i == arr.length - 1) {
+            return true;
+        } else if (arr[i] > arr[i + 1]) {
+            return false;
+        } else {
+            return check1(arr, i + 1);
         }
     }
 }

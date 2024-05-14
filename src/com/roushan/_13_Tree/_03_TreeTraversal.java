@@ -1,6 +1,8 @@
 package com.roushan._13_Tree;
 
+import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class _03_TreeTraversal {
     public static void main(String[] args) {
@@ -10,6 +12,7 @@ public class _03_TreeTraversal {
         tree.populate(sc);
         tree.prettyDisplay();
         System.out.println();
+        //using recursion
         System.out.println("InOrder::");
         inOrder(tree.root);
         System.out.println();
@@ -20,6 +23,7 @@ public class _03_TreeTraversal {
         postOrder(tree.root);
     }
 
+    //Recursive way solution.
     //Time Complexity = O(n)
     //Auxiliary Space = O(H) where H is the height of the tree.
     //For all traversals.

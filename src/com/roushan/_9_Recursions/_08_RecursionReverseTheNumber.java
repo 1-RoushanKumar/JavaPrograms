@@ -1,6 +1,6 @@
 package com.roushan._9_Recursions;
 
-public class _08_RecursionReverseTheNumber {
+public class   _08_RecursionReverseTheNumber {
 
 
     public static void main(String[] args) {

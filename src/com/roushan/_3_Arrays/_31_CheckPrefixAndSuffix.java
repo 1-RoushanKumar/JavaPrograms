@@ -43,7 +43,6 @@ public class _31_CheckPrefixAndSuffix {
         return false;
     }
 
-
     //2nd way creating two new array to store prefix and suffix sum.
 //    static boolean check2(int[] arr) {
 //        int[] arr1 = new int[arr.length];

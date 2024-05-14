@@ -13,6 +13,7 @@ public class _13_MaximumWidthOfBinaryTree {
         tree.prettyDisplay();
         System.out.println();
         int ans = maxWidth(tree.root);
+        System.out.println(ans);
     }
     private static int maxWidth(_02_BinaryTreeDetail.Node root) {
         if (root == null) {
@@ -20,11 +21,11 @@ public class _13_MaximumWidthOfBinaryTree {
         }
         Queue<_02_BinaryTreeDetail.Node> q = new LinkedList<>();
         q.add(root);
-        int res = 0;
+        int count = 0;
         while (!q.isEmpty()) {
-            int count = q.size();
-            res = Math.max(res, count);
-            for (int i = 0; i < count; i++) {
+            int size = q.size();
+            count = Math.max(count, size);
+            for (int i = 0; i < size; i++) {
                 _02_BinaryTreeDetail.Node curr = q.poll();
                 if (curr.left != null) {
                     q.add(curr.left);
@@ -34,6 +35,6 @@ public class _13_MaximumWidthOfBinaryTree {
                 }
             }
         }
-        return res;
+        return count;
     }
 }

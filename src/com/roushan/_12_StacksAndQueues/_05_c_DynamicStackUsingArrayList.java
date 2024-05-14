@@ -14,8 +14,8 @@ public class _05_c_DynamicStackUsingArrayList {
         if (isEmpty()) {
             throw new Exception("Stack is empty!!");
         } else {
-            int res = data.get(data.size() - 1);
-            data.remove(data.size() - 1);
+            int res = data.getLast();
+            data.removeLast();
             return res;
         }
     }

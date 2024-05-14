@@ -40,7 +40,7 @@ public class _13_RecursionFindingIndexOfMoreThanOneTarget {
         count(arr, target, i + 1);
     }
 
-    //2nd Method same as above but this time returning array of indices.
+    //2nd Method same as above, but this time returning an array of indices.
     static int[] ans(int[] arr, int[] empty, int[] target, int i, int j) {
         if (j == target.length) {
             return empty;
@@ -58,7 +58,7 @@ public class _13_RecursionFindingIndexOfMoreThanOneTarget {
         }
     }
 
-    //2nd Method Above Problem solved
+    //3rd Method Above Problem solved
     static ArrayList<Integer> countTar(int[] arr, int target, int i, ArrayList<Integer> list) {
         if (i == arr.length) {
             if (list.isEmpty()) {

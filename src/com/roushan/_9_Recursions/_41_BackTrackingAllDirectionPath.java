@@ -21,7 +21,7 @@
 
 package com.roushan._9_Recursions;
 
-public class _33_BackTrackingAllDirectionPath {
+public class _41_BackTrackingAllDirectionPath {
     public static void main(String[] args) {
         boolean[][] maze = {
                 {true, true, true},

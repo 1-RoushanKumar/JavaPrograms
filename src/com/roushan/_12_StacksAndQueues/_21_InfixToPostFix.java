@@ -76,7 +76,7 @@ public class _21_InfixToPostFix {
 
     // Main code.
     public static void main(String[] args) {
-        String exp = "A+B-(C/D*E^F)%G*H";   //infix string.
+        String exp = "(((4+8)*(6*5))^((3/2)*(2-2)))";   //infix string.
         // Function call
         infixToPostfix(exp);
     }

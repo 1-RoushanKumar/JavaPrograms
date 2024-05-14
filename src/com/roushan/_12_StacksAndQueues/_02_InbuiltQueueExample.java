@@ -13,7 +13,6 @@ public class _02_InbuiltQueueExample {
         que.add(7);
         que.add(9);
         que.add(11);
-
         //queue follow fifo(first in first out) and lilo(last in last out) principal;
         System.out.println(que.remove());
         System.out.println(que.remove());

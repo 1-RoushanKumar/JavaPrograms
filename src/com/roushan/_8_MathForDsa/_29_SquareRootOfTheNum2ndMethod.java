@@ -1,8 +1,8 @@
 //newton raphson formula = sqrt(n) = 0.5*(x+(n/X)
 //where n is any number and x is the closet value to the sqrt of n.
-package com.roushan._4_BinarySearch;
+package com.roushan._8_MathForDsa;
 
-public class _20_SquareRootOfTheNum2ndMethod {
+public class _29_SquareRootOfTheNum2ndMethod {
     public static void main(String[] args) {
         long n = 37966989669L;
         System.out.printf("%.3f", sqrt(n));

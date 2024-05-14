@@ -2,6 +2,7 @@ package com.roushan._13_Tree;
 
 import java.util.Scanner;
 
+//we need to find the node that has maximum value.
 public class _09_MaximumInBinaryTree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

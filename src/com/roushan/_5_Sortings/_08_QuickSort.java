@@ -8,7 +8,6 @@ public class _08_QuickSort {
         sort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
-
     static void sort(int[] nums, int low, int high) {
         if (low >= high) {
             return;
@@ -33,9 +32,7 @@ public class _08_QuickSort {
                 start++;
                 end--;
             }
-
         }
-
         sort(nums, low, end - 1);
 
         sort(nums, start + 1, high);

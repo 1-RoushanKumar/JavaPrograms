@@ -20,8 +20,8 @@ public class _19_RecursionReplaceDesiredCharacterFromString {
 //        remove(builder, 0, ch);
 //        System.out.println(builder);
 
-        //2nd way.
-//        System.out.println(remove(str, ch));
+//        2nd way.
+        System.out.println(remove(str, ch));
 
         //3rd way.
 //        skip(str, "", ch);

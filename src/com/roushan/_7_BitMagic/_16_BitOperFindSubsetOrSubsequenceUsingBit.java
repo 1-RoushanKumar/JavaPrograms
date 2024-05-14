@@ -14,7 +14,7 @@ public class _16_BitOperFindSubsetOrSubsequenceUsingBit {
         System.out.println();
         System.out.println("-------------------------------------");
 
-        int[] arr = {5, 6, 7};
+        int[] arr = {1,2,3};
         System.out.println("Array Subset of::" + Arrays.toString(arr));
         subSetInt(arr);
     }

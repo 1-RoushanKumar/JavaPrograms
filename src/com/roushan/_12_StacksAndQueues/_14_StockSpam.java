@@ -3,6 +3,7 @@ package com.roushan._12_StacksAndQueues;
 import java.util.Stack;
 
 //https://www.geeksforgeeks.org/the-stock-span-problem/
+//GFG Lec - 12
 public class _14_StockSpam {
     public static void main(String[] args) {
         int[] arr = {18, 12, 13, 14, 11, 16};
@@ -24,9 +25,14 @@ public class _14_StockSpam {
             System.out.print(span + " ");
         }
     }
+    //Some observation
+    //12th lecture of stack gfg.
+    //if there is a greater element on leftSide:
+    //Span = (index of current elements) - (index of a closet greater element on the left side).
+    //and if there is not a greater element on the left side
+    //then (index of the current elements) + 1;
 
     //Efficient approach which take O(n) time complexity and space complexity.
-    //12th lecture of stack gfg.
     static void printSpan2(int[] arr) {
         Stack<Integer> stack = new Stack<>();
         stack.push(0);

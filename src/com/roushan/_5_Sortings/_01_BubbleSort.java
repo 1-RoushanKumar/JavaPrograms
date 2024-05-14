@@ -7,7 +7,7 @@ public class _01_BubbleSort {
         int[] arr = {3, 58, -9, -2, 0, 258, 655};
         sort(arr);
         System.out.println(Arrays.toString(arr));
-    }
+      }
 
     static void sort(int[] arr) {
         boolean swappedFlag = false;

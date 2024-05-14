@@ -12,11 +12,11 @@ public class _05_MethodsInStringbuilder {
         System.out.println(builder);    //RoushanKumar
         System.out.println(builder.length());   //12
         System.out.println(builder.delete(7,12));  //Roushan after deleting value of the given range.
-        System.out.println(builder.indexOf("a"));  //index of a is 5
+        System.out.println(builder.indexOf("a"));  //index of 'a' is 5
         System.out.println(builder.reverse());
         System.out.println(builder.reverse());
         char ch = builder.charAt(0);
-        ch = 'r';
+        System.out.println(ch);
         System.out.println(builder);
         //there are so many more.
 //        System.out.println(str);

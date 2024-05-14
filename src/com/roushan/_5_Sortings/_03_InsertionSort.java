@@ -8,7 +8,6 @@ public class _03_InsertionSort {
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
-
     static void sort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
