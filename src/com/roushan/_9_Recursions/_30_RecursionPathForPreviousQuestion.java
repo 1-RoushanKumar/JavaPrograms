@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class _30_RecursionPathForPreviousQuestion {
     public static void main(String[] args) {
-        path("", 3, 3);
+        path("", 4, 4);
         System.out.println();
         System.out.println(path2("", 3, 3));
     }

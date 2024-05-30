@@ -1,7 +1,7 @@
 package com.roushan._13_Tree;
 
 import java.util.Scanner;
-
+//GFG 19
 public class _14_BinaryTreeToDoublyLinkedList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,9 +13,10 @@ public class _14_BinaryTreeToDoublyLinkedList {
         _02_BinaryTreeDetail.Node head = convert(tree.root);
         printList(head);
     }
-
+    //prev is use to keep track of nodes, which is used to connect nodes.
     static _02_BinaryTreeDetail.Node prev = null;
 
+    //for making doubly linked list we traversing inorder traversal.
     private static _02_BinaryTreeDetail.Node convert(_02_BinaryTreeDetail.Node root) {
         if (root == null) {
             return root;

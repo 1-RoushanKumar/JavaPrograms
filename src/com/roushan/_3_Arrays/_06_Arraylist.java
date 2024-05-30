@@ -1,15 +1,13 @@
 //https://youtu.be/XYQ_T3SKwN0?list=PLxgZQoSe9cg00xyG5gzb5BMkOClkch7Gr
 package com.roushan._3_Arrays;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class _06_Arraylist {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         ArrayList<Integer> list = new ArrayList<>(4);
-
         list.add(45);
         list.add(2);
         list.add(89);
@@ -17,8 +15,8 @@ public class _06_Arraylist {
         list.add(123);
         list.add(45);
         System.out.println(list);    //printing.
-        list.add(1,0); //when we add new element in the index where already some element then it push
-                                      //all element back and come to its initialized index.
+        list.add(1, 0); //when we add new element in the index where already some element then it push
+        //all element back and come to its initialized index.
         System.out.println(list);
         list.set(3, 90);
         list.set(1, 0);
@@ -50,5 +48,13 @@ public class _06_Arraylist {
 //        for(int value: list){
 //            System.out.print(value+" ");
 //        }
+        ArrayList<String> res = new ArrayList<>();
+        res.add("132");
+        res.add("123");
+        res.add("321");
+        res.add("231");
+        System.out.println(res);
+        Collections.sort(res);
+        System.out.println(res);
     }
 }

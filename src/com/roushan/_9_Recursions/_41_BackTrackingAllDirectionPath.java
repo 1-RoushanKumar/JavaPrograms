@@ -14,7 +14,7 @@
 //One solution is to mark the path which is already cover by false so, it will not go to the same path again and then
 //prevent stackoverflow.
 
-//But one problem is when we get new call it must be true so, we can access that path again.
+//But one problem is when we get new call it must be true so, we can access that path again for future possibilities
 //So, we need to make that false path true which don't cause overflow.
 //How we make that false statement true solution is backtracking.
 //Backtracking is also a recursion.
@@ -26,7 +26,7 @@ public class _41_BackTrackingAllDirectionPath {
         boolean[][] maze = {
                 {true, true, true},
                 {true, true, true},
-                {true, true, true}
+                {true, true, true} 
         };
         allPaths("", maze, 0, 0);
     }

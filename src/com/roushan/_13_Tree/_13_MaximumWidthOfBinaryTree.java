@@ -3,7 +3,7 @@ package com.roushan._13_Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+//maximum width means the level which have the maximum number of nodes here we need to return the number of nodes
 public class _13_MaximumWidthOfBinaryTree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

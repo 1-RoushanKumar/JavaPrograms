@@ -19,12 +19,11 @@ public class _04_FloorInBST {
         root.right.left = new Node4(7);
         root.left.left = new Node4(1);
         root.left.right = new Node4(4);
-        root.left.right.left = new Node4(3);
         prettyDisplay(root, 0);
         System.out.println();
-        Node4 ans = floor(root, 5);
+        Node4 ans = floor(root, 3);
         System.out.println("Floor of the tree is::" + ans.value);
-        ans = floor1(root, 5);
+        ans = floor1(root, 3);
         System.out.println("Floor of the tree is::" + ans.value);
     }
 

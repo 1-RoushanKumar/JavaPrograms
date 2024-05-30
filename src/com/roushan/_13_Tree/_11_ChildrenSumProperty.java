@@ -2,7 +2,7 @@ package com.roushan._13_Tree;
 
 import java.util.Scanner;
 
-//gfg lec = 16.
+//if a sum of the child nodes is equal to the parent node, then we return true else false.
 public class _11_ChildrenSumProperty {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -6,7 +6,6 @@ public class _04_HashMap {
     public static void main(String[] args) {
         // Create an empty hash map
         HashMap<String, Integer> m = new HashMap<>();
-
         // Add elements to the map
         m.put("gfg", 10);
         m.put("ide", 15);

@@ -3,7 +3,7 @@ package com.roushan._9_Recursions;
 //GFG Lecture - 15 (Recursion)
 public class _35_RecursionJosephusProblem {
     public static void main(String[] args) {
-        int n = 7, k = 3;
+        int n = 4, k = 2;
         int ans = jos(n, k);
         System.out.println(ans);
     }

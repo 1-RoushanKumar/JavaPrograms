@@ -5,6 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
+//GFG LEc 21.
 public class _18_SpiralTraversal {
     public static void main(String[] args) {
 
@@ -27,6 +28,7 @@ public class _18_SpiralTraversal {
 
     //1st way first find the height of the tree then go to each level of the tree say level as k
     //if level 1 ie odd then print left to right and when level k = 2 then print right to left.
+    //Time complexity = O(n2)
     private static int height(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
             return 0;
@@ -55,17 +57,18 @@ public class _18_SpiralTraversal {
     }
 
     //2nd way Time Complexity and space complexity will be O(n).
-    //This way is similar to the LevelOrder traversal, but here we used an extra data structure stack
-    //we taken a reverse boolean which keep changes itself alternatively which will give the idea about
-    //how to print left to right or right to left. When traversal is from right to left than we push the values
+    //This way is similar to the Line by line LevelOrder traversal.However, here we used an extra data structure stack
+    //we have taken a reverse boolean which keeps changes itself alternatively which will give the idea about
+    //printing from left to right and then  right to left alternatively.When traversal is from right to left, then we push the values
     //to stack then print it.
     static void spiral2(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
             return;
         }
-        Queue<_02_BinaryTreeDetail.Node> q = new LinkedList<>();
+        Queue<_02_BinaryTreeDetail.Node> q = new LinkedList<>();  //first, we add the elements in the queue.
         Stack<Integer> s = new Stack<>();
-        boolean reverse = false;
+        boolean reverse = false;     //here initially reverse is false assume it telling us to print from left to right.
+        //and when reverse true, then we push the queue value to stack and then print them.
         q.add(node);
         while (!q.isEmpty()) {
             int count = q.size();
@@ -92,15 +95,15 @@ public class _18_SpiralTraversal {
         }
     }
 
-    //3rd way by using two stack.
+    //3rd way by using two stacks.
     //1.Push root to the stack s1.
     //2.while any of the two stacks is not empty
     //      while s1 is not empty
     //          1.Take out a node,print it.
-    //          2.Push children of the take out node into s2 in left to right.
-    //      while s2 is not empty
+    //          2.Push children of the take-out node into s2 from left to right.
+    //      while s2 is not empty,
     //          1.Take out a node,print it.
-    //          2.Push children of the take out node into s1 in right to left.
+    //          2.Push children of the take-out node into s1 in right to left.
     static void spiral3(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
             return;

@@ -3,7 +3,7 @@ package com.roushan._13_Tree;
 import java.util.Scanner;
 
 public class _19_DiameterOfTheBinaryTree {
-    //diameter of the binary tree means longest distance between two leaf nodes.lec no. 22 gfg.
+    //the diameter of the binary tree means the longest distance between two leaf nodes.lec no. 22 gfg.
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Using a previous made binary tree.
@@ -22,8 +22,8 @@ public class _19_DiameterOfTheBinaryTree {
     }
 
     //1st way which will take O(n^2) time complexity.
-    //find the height of left subtree(we know which will go upto leaf node for finding the height) and similarly
-    //height of the right subtree. Hence Formula for getting diameter is (Lh+rh+1) for each subtree
+    //Find the height of the left subtree (we know which will go up to leaf node for finding the height) and similarly
+    //height of the right subtree.Hence, the Formula for getting diameter is (Lh+rh+1) for each subtree
     //then find the maximum diameter between these subtrees.
     public static int diameter(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
@@ -55,15 +55,15 @@ public class _19_DiameterOfTheBinaryTree {
         return Math.max(d1, Math.max(d2, d3));
     }
 
-    //2nd way with O(n) time complexity finding height and diameter in same function.
+    //2nd way with O(n) time complexity finding height and diameter in the same function.
     static int res = 0;
 
     public static int diameterWithHeightFunction(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
             return 0;
         }
-        int lh = height(node.left);
-        int rh = height(node.right);
+        int lh = diameterWithHeightFunction(node.left);
+        int rh = diameterWithHeightFunction(node.right);
 
         res = Math.max(res, lh + rh);  //this will give the diameter
         return 1 + Math.max(lh, rh);  //this will give height.
@@ -92,6 +92,4 @@ public class _19_DiameterOfTheBinaryTree {
     //one optimal approach is also for this we need to learn hashmap.
     //idea is precompute height of every node and store it in a map.
     //which help to solve this in O(n) time and require extra O(n) space for map.
-
-
 }

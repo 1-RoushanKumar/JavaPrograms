@@ -7,6 +7,7 @@ class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+
     TreeNode(int val) {
         this.val = val;
     }
@@ -66,7 +67,7 @@ public class _17_PreOrderPostOrderInOrderInOneTraversal {
 
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);

@@ -3,7 +3,7 @@ package com.roushan._13_Tree;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//lec - 23 and 24 gfg.
+//first ancestor from nodes that are common in both nodes.
 public class _20_LeastCommonAncestors {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,11 +12,11 @@ public class _20_LeastCommonAncestors {
         tree.populate(sc);
         tree.prettyDisplay();
         System.out.println();
-        int n1 = 40;
-        int n2 = 50;
+        int n1 = 8;
+        int n2 = 40;
         _02_BinaryTreeDetail.Node ans = lca(tree.root, n1, n2);
         if (ans != null) {
-            System.out.print(ans.value);
+            System.out.println(ans.value);
         }
         _02_BinaryTreeDetail.Node ans2 = lcaTwo(tree.root, n1, n2);
         System.out.print(ans2.value);
@@ -60,22 +60,19 @@ public class _20_LeastCommonAncestors {
     //Time complexity = O(n) same as above but difference is here we need to do
     //only one traversal.
     public static _02_BinaryTreeDetail.Node lcaTwo(_02_BinaryTreeDetail.Node node, int n1, int n2) {
-        if (node == null) {
-            return null;
-        }
-        if (node.value == n1 || node.value == n2) {
+        if (node == null || node.value == n1 || node.value == n2) {
             return node;
         }
-        _02_BinaryTreeDetail.Node lca1 = lcaTwo(node.left, n1, n2);
-        _02_BinaryTreeDetail.Node lca2 = lcaTwo(node.right, n1, n2);
+        _02_BinaryTreeDetail.Node left = lcaTwo(node.left, n1, n2);
+        _02_BinaryTreeDetail.Node right = lcaTwo(node.right, n1, n2);
 
-        if (lca1 != null && lca2 != null) {
-            return node;
+        if (left == null) {
+            return right;
         }
-        if (lca1 != null) {
-            return lca1;
+        if (right == null) {
+            return left;
         } else {
-            return lca2;
+            return node;
         }
     }
 }

@@ -24,7 +24,7 @@ public class _08_SizeOfTheBinaryTree {
         if (node == null) {
             return 0;
         }
-        //just use breath first search method and keep counting the nodes while popping the node from the queue.
+        //Just use breath first search method and keep counting the nodes while popping the node from the queue.
         Queue<_02_BinaryTreeDetail.Node> q = new LinkedList<>();
         q.add(node);
         int count = 0;

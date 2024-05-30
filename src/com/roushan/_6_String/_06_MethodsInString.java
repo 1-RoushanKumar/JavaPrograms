@@ -31,7 +31,6 @@ public class _06_MethodsInString {
         System.out.println(name.contains(val));
         //if we change it to bhai it will show false.
         //there are so many method.
-
         
         String s1 = "Rohit";
         String s2 = "Mohit";

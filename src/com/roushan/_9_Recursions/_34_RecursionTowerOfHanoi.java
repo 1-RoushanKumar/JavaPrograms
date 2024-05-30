@@ -2,7 +2,7 @@ package com.roushan._9_Recursions;
 
 public class _34_RecursionTowerOfHanoi {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 3;
         int ans = TOH(n,"From" ,"To", "Aux");
         System.out.println(ans);
     }

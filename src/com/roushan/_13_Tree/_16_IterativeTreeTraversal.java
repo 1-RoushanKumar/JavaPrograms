@@ -1,5 +1,7 @@
 package com.roushan._13_Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -21,10 +23,12 @@ public class _16_IterativeTreeTraversal {
         postOrder(tree.root);
         System.out.println();
         postOrder2(tree.root);
+        System.out.println();
+        postOrder3(tree.root);
     }
 
     //Iterative way.
-    //time and space complexity O(n).
+    //Time and space complexity O(n).
     private static void preOrder(_02_BinaryTreeDetail.Node node) {
         if (node == null) {
             return;
@@ -87,7 +91,30 @@ public class _16_IterativeTreeTraversal {
         }
     }
 
-    //postOrder 2nd way using only on stack.
+    //postOrder 2nd way using one queue and one stack
+    private static void postOrder3(_02_BinaryTreeDetail.Node node) {
+        if (node == null) {
+            return;
+        }
+        Queue<_02_BinaryTreeDetail.Node> q = new LinkedList<>();
+        q.add(node);
+        Stack<Integer> s = new Stack<>();
+        while (!q.isEmpty()) {
+            _02_BinaryTreeDetail.Node curr = q.poll();
+            s.add(curr.value);
+            if (curr.right != null) {
+                q.add(curr.right);
+            }
+            if (curr.left != null) {
+                q.add(curr.left);
+            }
+        }
+        while (!s.isEmpty()) {
+            System.out.print(s.pop() + " ");
+        }
+    }
+
+    //postOrder 3nd way using only on stack.
     //https://youtu.be/xLQKdq0Ffjg
     private static void postOrder2(_02_BinaryTreeDetail.Node node) {
         _02_BinaryTreeDetail.Node curr = node;
@@ -99,12 +126,10 @@ public class _16_IterativeTreeTraversal {
             } else {
                 _02_BinaryTreeDetail.Node temp = s.peek().right;
                 if (temp == null) {
-                    temp = s.pop();
-                    System.out.print(temp.value + " ");
-                    while (!s.isEmpty() && temp == s.peek().right) {
+                    do {
                         temp = s.pop();
                         System.out.print(temp.value + " ");
-                    }
+                    } while (!s.isEmpty() && temp == s.peek().right);
                 } else {
                     curr = temp;
                 }
