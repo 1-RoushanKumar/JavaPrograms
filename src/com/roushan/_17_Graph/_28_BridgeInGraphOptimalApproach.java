@@ -89,7 +89,7 @@ public class _28_BridgeInGraphOptimalApproach {
 Time Complexity Analysis:
 1. Constructing the graph: O(V)
 2. Adding an edge: O(1)
-3. DFS traversal: O(V + E) - where V is the number of vertices and E is the number of edges.
+3. DFS traversal: O(V + E) - where V is the number of vertices, and E is the number of edges.
 4. Finding bridges: O(V + E) - Tarjan's algorithm runs in linear time.
    So, the total time complexity for finding bridges is O(V + E).
 */
