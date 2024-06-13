@@ -13,7 +13,7 @@ class Graph1 {
     // Constructor to initialize the graph with a given number of vertices
     public Graph1(int noOfVertices) {
         this.noOfVertices = noOfVertices;
-        adjList = new ArrayList<>(noOfVertices); // Initialize adjacency list
+        adjList = new ArrayList<>(noOfVertices); // Initialize an adjacency list
         for (int i = 0; i < noOfVertices; i++) {
             adjList.add(new LinkedList<>()); // Create a new list for each vertex
         }

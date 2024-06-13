@@ -4,24 +4,14 @@ import java.util.Arrays;
 
 class Graph {
     // Adjacency matrix to store graph edges
-    private int[][] adjMatrix;
+    public int[][] adjMatrix;
     // Number of vertices in the graph
-    private int noOfVertices;
+    public int noOfVertices;
 
     // Constructor to initialize the graph with a given number of vertices
     public Graph(int noOfVertices) {
         this.noOfVertices = noOfVertices;
         adjMatrix = new int[noOfVertices][noOfVertices]; // Initialize adjacency matrix with zeros
-    }
-
-    // Getter for the number of vertices
-    public int getNoOfVertices() {
-        return noOfVertices;
-    }
-
-    // Getter for the adjacency matrix
-    public int[][] getAdjMatrix() {
-        return adjMatrix;
     }
 
     // Method to print the adjacency matrix
@@ -101,8 +91,10 @@ class Graph {
             }
             new_i++;
         }
-        //here new_i and new_j is index for newAdjMatrix.
-        // Update the adjacency matrix to the new matrix and decrement vertex count
+        /*
+        Here new_i and new_j is index for newAdjMatrix.
+         Update the adjacency matrix to the new matrix and decrement vertex count
+        */
         adjMatrix = newAdjMatrix;
         noOfVertices--;
     }
@@ -152,7 +144,5 @@ public class _01_AdjacencyMatrix {
         // Print the adjacency matrix after removing the vertex
         System.out.println("Adjacency Matrix after removing vertex 2:");
         g.printAdjMatrix();
-        System.out.println("Number of vertices: " + g.getNoOfVertices()); // Print the current number of vertices
-        System.out.println(Arrays.deepToString(g.getAdjMatrix())); // Print the updated adjacency matrix
     }
 }

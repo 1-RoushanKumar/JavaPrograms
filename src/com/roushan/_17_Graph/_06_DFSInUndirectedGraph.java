@@ -31,19 +31,6 @@ class UndirectedList {
             System.out.println(adj.get(i)); // Print the adjacency list of the vertex
         }
     }
-
-    public void addVertex() {
-        adj.add(new ArrayList<>());
-        v++;
-    }
-
-    public void removeVertex(int rem) {
-        for (int i = 0; i < adj.size(); i++) {
-            adj.get(i).remove(Integer.valueOf(rem));
-        }
-        adj.remove(rem);
-        v--;
-    }
 }
 
 public class _06_DFSInUndirectedGraph {
