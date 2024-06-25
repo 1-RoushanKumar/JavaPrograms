@@ -5,7 +5,7 @@ import java.util.List;
 
 public class _26_RecursionSubSetsOfAnArray {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3};
+        int[] arr = {8,2,4,7};
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> subset = new ArrayList<>();
 
