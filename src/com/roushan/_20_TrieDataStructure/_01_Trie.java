@@ -109,7 +109,7 @@ class Trie {
     // Recursive method to print all words in the Trie
     private void printWords(TrieNode node, String prefix) {
         if (node.isEnd) { // If the current node is the end of a word
-            System.out.print(prefix+" "); // Print the current prefix
+            System.out.print(prefix + " "); // Print the current prefix
         }
         for (int i = 0; i < 26; i++) { // Iterate over all possible children (a-z)
             if (node.children[i] != null) { // If the child node exists
