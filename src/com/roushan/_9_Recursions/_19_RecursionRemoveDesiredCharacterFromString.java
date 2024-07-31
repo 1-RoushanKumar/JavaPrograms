@@ -1,6 +1,6 @@
 package com.roushan._9_Recursions;
 
-public class _19_RecursionReplaceDesiredCharacterFromString {
+public class _19_RecursionRemoveDesiredCharacterFromString {
     public static void main(String[] args) {
         String str = "abbcda";
         char ch = 'a';

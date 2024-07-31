@@ -1,6 +1,6 @@
 package com.roushan._9_Recursions;
 
-public class   _08_RecursionReverseTheNumber {
+public class _08_RecursionReverseTheNumber {
 
 
     public static void main(String[] args) {
@@ -10,6 +10,9 @@ public class   _08_RecursionReverseTheNumber {
 
         int ans = reverse2(n);
         System.out.println(ans);
+
+        System.out.println();
+        System.out.println(reverse3(0, n));
     }
 
     //1st method.
@@ -42,5 +45,14 @@ public class   _08_RecursionReverseTheNumber {
             n = n / 10;
         }
         return coun;
+    }
+
+    //3rd way passing sum as an arguments.
+    public static int reverse3(int sum, int n) {
+        if (n == 0) {
+            return sum;
+        }
+        int rem = n % 10;
+        return reverse3((sum * 10 + rem), n / 10);
     }
 }

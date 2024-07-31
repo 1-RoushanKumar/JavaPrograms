@@ -1,6 +1,6 @@
 package com.roushan._9_Recursions;
 
-public class _20_RecursionReplaceDesiredWordFromString {
+public class _20_RecursionRemoveDesiredWordFromString {
     public static void main(String[] args) {
         String str = "An apple is Red and apple is tasty.";
         String reStr = "apple";

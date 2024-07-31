@@ -9,7 +9,7 @@ package com.roushan._9_Recursions;
 
 public class _29_RecursionMazeCountPossibleWayToReachEnd {
     public static void main(String[] args) {
-        System.out.println("No. of ways are::" + count(4, 4));
+        System.out.println("No. of ways are::" + count(3, 3));
     }
 
     static int count(int row, int col) {
@@ -26,3 +26,4 @@ public class _29_RecursionMazeCountPossibleWayToReachEnd {
         return left + right;
     }
 }
+

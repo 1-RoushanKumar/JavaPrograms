@@ -6,6 +6,8 @@ public class _10_RecursionCountNoOfZeroes {
         int count = 0;
         int ans = countZeroes(n, count);
         System.out.println("Number of zeroes is " + n + " is " + ans);
+        System.out.println();
+        System.out.println(countZeroes1(n));
     }
 
 //    static int count = 0;    //you can also solve it by taking static count but remove count from argument of the function.
@@ -19,6 +21,18 @@ public class _10_RecursionCountNoOfZeroes {
             } else {
                 return countZeroes(n / 10, count);
             }
+        }
+    }
+
+    //2nd way
+    static int countZeroes1(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n % 10 == 0) {
+            return 1 + countZeroes1(n / 10);
+        } else {
+            return countZeroes1(n / 10);
         }
     }
 }

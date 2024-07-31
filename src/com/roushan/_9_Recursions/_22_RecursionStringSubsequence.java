@@ -11,6 +11,10 @@ public class _22_RecursionStringSubsequence {
         System.out.println();
         System.out.println(subSeq2(str, ""));
 
+        System.out.println();
+        ArrayList<String> ans = new ArrayList<>();
+        System.out.println(subSeq3(str, "", 0, str.length(), ans));
+
     }
 
     //1st way.
@@ -37,5 +41,22 @@ public class _22_RecursionStringSubsequence {
 
         left.addAll(right);
         return left;
+    }
+
+    //3rd way
+    static ArrayList<String> subSeq3(String str, String store, int i, int n, ArrayList<String> ans) {
+        if (i == n) {
+            ans.add(store);  // Add the generated subsequence to the list
+            return ans;
+        }
+        char ch = str.charAt(i);
+
+        // Recursive call including the current character
+        subSeq3(str, store + ch, i + 1, n, ans);
+
+        // Recursive call excluding the current character
+        subSeq3(str, store, i + 1, n, ans);
+
+        return ans;  // Return the list of subsequences
     }
 }
